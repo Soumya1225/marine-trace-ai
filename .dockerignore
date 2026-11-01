@@ -1,0 +1,19 @@
+# keep the build context small: data and weights are mounted, not copied
+.env
+venv/
+**/__pycache__/
+**/node_modules/
+frontend/dist/
+Datasets/
+models/
+reports/
+backend/uploads/
+backend/*.db
+_updates/
+_backups/
+old_unused/
+colab_upload/
+notebooks/
+*.zip
+*.pth
+.git/

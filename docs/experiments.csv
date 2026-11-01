@@ -1,0 +1,5 @@
+date,run_id,model,encoder,lr,epochs,batch_size,mIoU,oil_IoU,lookalike_IoU,notes
+2026-10-07,sos_fcn_base_20261007_1350,fcn,resnet34,0.0001,20,16,0.7211,0.6679,,baseline
+2026-10-07,sos_unet_resnet34_20261007_1409,unet,resnet34,0.0001,30,16,0.8146,0.7702,,main model
+2026-10-07,sos_deeplabv3plus_resnet50_20261007_1434,deeplabv3plus,resnet50,0.0001,25,16,0.8101,0.765,,comparison
+2026-10-08,sos_segformer_mit_b1_20261008_0639,segformer,mit_b1,6e-05,30,16,0.8142,0.7686,,transformer

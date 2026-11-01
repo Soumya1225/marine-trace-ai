@@ -1,0 +1,15 @@
+.zone-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+.zone-row-actions { display: flex; flex-direction: column; gap: .2rem; align-items: flex-start; }
+.link-btn.danger { color: #B3261E; }
+.ok-note { margin: .4rem 0; padding: .4rem .7rem; background: #E3F2E8; border-left: 4px solid #1A6B3A; border-radius: 6px; font-size: .9rem; }
+.zone-tag { display: inline-block; background: #E6EFF5; color: #1F4E6B; border-radius: 999px; padding: .1rem .55rem; font-size: .8rem; margin-left: .3rem; }
+.feed-controls { display: flex; flex-wrap: wrap; gap: .8rem; align-items: flex-end; }
+.feed-controls label { min-width: 200px; }
+.legend-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: .5rem; }
+.legend-row i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.legend-row .silent-dot { border: 2px dashed #B3261E; background: transparent; }
+.ship-list { max-height: 470px; overflow-y: auto; }
+.clickable { cursor: pointer; }
+.clickable:hover { background: #F3F6F8; }
+label.check { flex-direction: row; align-items: center; gap: .4rem; min-width: 0; }
+label.check input { width: auto; }

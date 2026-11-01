@@ -1,0 +1,8 @@
+.compare-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.compare-pick label { display: flex; flex-direction: column; gap: 4px; font-weight: 600; }
+.compare-pick select { font-weight: 400; }
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.compare-facts { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 0.75rem; }
+@media (max-width: 900px) {
+  .compare-pick, .compare-grid { grid-template-columns: 1fr; }
+}

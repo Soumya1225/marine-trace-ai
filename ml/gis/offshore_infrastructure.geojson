@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "name": "offshore_infrastructure_san_pedro_bay",
+  "description": "Offshore oil platforms and pipelines near Huntington Beach / Long Beach (San Pedro Bay). Positions are approximate, digitised from public NOAA IncidentNews and BOEM Pacific OCS maps. For operational use replace this file with the official BOEM platform and pipeline layers (same GeoJSON format).",
+  "features": [
+    {"type": "Feature",
+     "properties": {"name": "Platform Elly", "kind": "platform", "operator": "Beta Offshore (Amplify Energy)", "field": "Beta Unit", "role": "processing platform; start of pipeline P00547"},
+     "geometry": {"type": "Point", "coordinates": [-118.1275, 33.5822]}},
+    {"type": "Feature",
+     "properties": {"name": "Platform Ellen", "kind": "platform", "operator": "Beta Offshore (Amplify Energy)", "field": "Beta Unit", "role": "drilling and production; bridged to Elly"},
+     "geometry": {"type": "Point", "coordinates": [-118.1291, 33.5826]}},
+    {"type": "Feature",
+     "properties": {"name": "Platform Eureka", "kind": "platform", "operator": "Beta Offshore (Amplify Energy)", "field": "Beta Unit", "role": "drilling and production"},
+     "geometry": {"type": "Point", "coordinates": [-118.1165, 33.5640]}},
+    {"type": "Feature",
+     "properties": {"name": "Platform Edith", "kind": "platform", "operator": "DCOR", "field": "Beta Unit", "role": "drilling and production"},
+     "geometry": {"type": "Point", "coordinates": [-118.1431, 33.5958]}},
+    {"type": "Feature",
+     "properties": {"name": "Pipeline Eureka to Elly", "kind": "pipeline", "operator": "Beta Offshore (Amplify Energy)", "role": "in-field oil line"},
+     "geometry": {"type": "LineString", "coordinates": [[-118.1165, 33.5640], [-118.1275, 33.5822]]}},
+    {"type": "Feature",
+     "properties": {"name": "Pipeline P00547 (Elly to shore)", "kind": "pipeline", "operator": "Beta Offshore (Amplify Energy)", "role": "16-inch crude oil export line, about 28 km to the Beta pump station in Long Beach; leaked in October 2021 after an anchor strike (approximate route)"},
+     "geometry": {"type": "LineString", "coordinates": [[-118.1275, 33.5822], [-118.1100, 33.6100], [-118.0950, 33.6400], [-118.1050, 33.6900], [-118.1100, 33.7300], [-118.1600, 33.7700]]}}
+  ]
+}

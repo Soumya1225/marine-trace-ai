@@ -1,0 +1,23 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+frontend/dist/
+Datasets/raw/
+Datasets/processed/
+Datasets/synthetic/
+models/*.pth
+models/*.pt
+models/*.pkl
+*.zip
+*.nc
+backend/oilspill.db
+backend/uploads/
+colab_upload/
+backup_300cases/
+.env
+
+# added by final_cleanup
+Datasets/feedback/
+*.log

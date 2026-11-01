@@ -1,0 +1,8 @@
+.shap { margin: 8px 0 4px; }
+.shap-row { display: grid; grid-template-columns: 11rem 1fr 4.5rem; align-items: center; gap: 6px; font-size: 12px; margin: 2px 0; }
+.shap-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.shap-track { background: #E6ECEF; height: 8px; border-radius: 4px; overflow: hidden; }
+.shap-bar { display: block; height: 100%; border-radius: 4px; }
+.shap-bar.up { background: #C8322B; }
+.shap-bar.down { background: #2C6E91; }
+.shap-val { color: #5F6F7A; font-size: 11px; }

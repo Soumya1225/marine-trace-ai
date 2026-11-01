@@ -1,0 +1,23 @@
+.case-filters { margin: .75rem 0 1rem; display: flex; gap: .4rem; }
+.case-board { display: grid; grid-template-columns: repeat(5, minmax(200px, 1fr)); gap: .8rem; align-items: start; overflow-x: auto; }
+.case-col { background: #F3F6F8; border-radius: 10px; padding: .6rem; min-height: 120px; }
+.case-col h2 { font-size: 1rem; margin: .2rem .2rem .6rem; display: flex; justify-content: space-between; }
+.case-card { display: block; background: #fff; border: 1px solid #DDE3E7; border-left: 4px solid #2C6E91; border-radius: 8px;
+  padding: .55rem .65rem; margin-bottom: .55rem; color: inherit; text-decoration: none; }
+.case-card:hover { box-shadow: 0 2px 8px rgba(15, 42, 61, .12); }
+.case-card.overdue { border-left-color: #B3261E; }
+.case-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .25rem; }
+.case-title { font-weight: 600; margin-bottom: .2rem; }
+.case-foot { display: flex; justify-content: space-between; gap: .4rem; margin-top: .35rem; flex-wrap: wrap; }
+.due { color: #5F6F7A; }
+.due.overdue, .overdue-badge { color: #B3261E; font-weight: 600; }
+.figure-warn .figure-value { color: #B3261E; }
+.assign-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: .5rem; align-items: end; margin-top: .6rem; }
+.timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid #DDE3E7; }
+.timeline li { position: relative; padding: .1rem 0 .8rem 1rem; }
+.timeline li::before { content: ''; position: absolute; left: -6px; top: .35rem; width: 10px; height: 10px; border-radius: 50%; background: #2C6E91; }
+.timeline li.k-alert::before { background: #E8A42A; }
+.timeline li.k-detected::before, .timeline li.k-image::before { background: #8E1B14; }
+.timeline li.k-closed::before { background: #1A6B3A; }
+@media (max-width: 1100px) { .case-board { grid-template-columns: repeat(5, 240px); } }
+@media (max-width: 760px) { .assign-row { grid-template-columns: 1fr; } }

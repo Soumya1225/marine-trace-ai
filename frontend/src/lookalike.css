@@ -1,0 +1,7 @@
+.lookalike-box h3 { margin: 0 0 4px; }
+.la-score { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+.la-bar { flex: 1; height: 10px; background: linear-gradient(90deg, #E8A42A 0 40%, #f3e3b0 40% 60%, #f2c4bf 60%); border-radius: 5px; position: relative; overflow: hidden; }
+.la-bar > div { height: 100%; background: rgba(15, 42, 61, 0.55); border-right: 3px solid #0F2A3D; }
+.la-list li { font-size: 13px; margin: 4px 0; }
+.la-list .up { color: #C8322B; font-weight: 600; }
+.la-list .down { color: #8a6a00; font-weight: 600; }

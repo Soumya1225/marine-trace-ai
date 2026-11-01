@@ -1,0 +1,7 @@
+.infra-box { border: 1px solid #d8dee3; border-left: 4px solid #F28C28; border-radius: 6px; padding: 8px 10px; margin-bottom: 12px; background: #fffaf3; }
+.infra-box.warn { border-left-color: #C8322B; background: #fff3ef; }
+.infra-box h3 { margin: 0 0 4px; font-size: 14px; }
+.infra-box .table { margin: 6px 0; font-size: 12px; }
+.infra-box p { margin: 4px 0; }
+
+.play-row { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; }

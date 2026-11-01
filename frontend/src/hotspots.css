@@ -1,0 +1,5 @@
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.panel-head h2 { margin: 0 0 8px; }
+.seg { display: flex; gap: 4px; }
+.seg .btn.on { background: #12324A; color: #fff; }
+.id-link { margin-right: 6px; }

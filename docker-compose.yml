@@ -1,0 +1,35 @@
+# Marine Trace AI / SpillWatch - whole system with one command:
+#   docker compose up -d --build        then open http://localhost:8080
+# Large data and model weights stay on this computer and are mounted into the container.
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    env_file: .env
+    environment:
+      CORS_ORIGINS: "http://localhost:8080"
+      APP_URL: "http://localhost:8080"
+      DATABASE_URL: "sqlite:////data/db/oilspill.db"
+      STORAGE_DIR: "/data/uploads"
+    volumes:
+      - ./models:/app/models                 # trained model weights (.pth, ranker.pkl)
+      - ./Datasets:/app/Datasets             # satellite images, AIS, wind, currents, coastline
+      - ./reports:/app/reports               # figures shown on the Model performance page
+      - spillwatch-db:/data/db               # database
+      - spillwatch-uploads:/data/uploads     # uploads, results, PDF reports
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  spillwatch-db:
+  spillwatch-uploads:

@@ -1,0 +1,4 @@
+.check-box { display: flex; gap: 14px; align-items: flex-start; margin-top: 12px; padding: 12px; border: 1px solid #B8C4CC; border-radius: 8px; background: #F6F9FA; }
+.check-box img { width: 180px; max-width: 40%; border-radius: 6px; }
+.check-box p { margin: 4px 0; }
+.check-box.rejected { border-color: #C8322B; background: #FDF1F0; }

@@ -1,0 +1,59 @@
+.health-pill { padding: .35rem .8rem; border-radius: 999px; font-weight: 600; font-size: .9rem; }
+.health-pill.ok { background: #E3F2E8; color: #1A6B3A; }
+.health-pill.warning { background: #FDF3DF; color: #8A5A00; }
+.health-checks li { padding: .3rem 0; }
+.health-checks .tick, .health-checks .cross { display: inline-block; width: 1.4rem; text-align: center; font-weight: 700; }
+.health-checks .tick { color: #1A6B3A; }
+.health-checks .cross { color: #B3261E; }
+.health-counts { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: .6rem; margin-bottom: .75rem; }
+.health-counts div { display: flex; flex-direction: column; padding: .5rem .6rem; border: 1px solid var(--line, #dde3e7); border-radius: 8px; }
+.health-counts strong { font-size: 1.3rem; }
+.health-counts span { font-size: .8rem; color: var(--ink-soft, #5f6f7a); text-transform: capitalize; }
+
+/* phones and small tablets */
+@media (max-width: 760px) {
+  .table { display: block; overflow-x: auto; white-space: nowrap; }
+  .page-head { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .page-head .btn { width: 100%; }
+  .leaflet-container { max-height: 60vh; }
+  .chips { flex-wrap: wrap; }
+}
+
+.nav-section { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #8FA7B3; margin: .7rem .7rem .2rem; }
+.nav-section:first-child { margin-top: 0; }
+@media (max-width: 760px) { .nav-section { width: 100%; margin: .4rem .3rem 0; } }
+
+/* ---- scrolling fixes (Oct 2026) ---- */
+/* left menu: scroll inside when it is taller than the screen, so every link and Sign out stay reachable */
+.rail { overflow-y: auto; overscroll-behavior: contain; }
+.rail nav { flex: 0 0 auto; }
+.rail-user { margin-top: auto; padding-bottom: .5rem; }
+/* incident page: the right column scrolls with the page instead of inside a fixed-height box */
+.side-col { position: static; max-height: none; }
+.tab-body { overflow: visible; }
+/* 8 tabs: wrap onto two lines instead of being cut off */
+.tabs { flex-wrap: wrap; }
+.tabs .tab { flex: 1 0 auto; }
+
+/* ---- feedback retraining (B7) ---- */
+.feedback-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .75rem; }
+.retrain-status { margin-top: .9rem; padding: .7rem .9rem; border-radius: 8px; border: 1px solid #dde3e7; }
+.retrain-status.running { background: #EEF4FA; border-color: #B9D2EA; }
+.retrain-status.ok { background: #E3F2E8; border-color: #B6DCC3; }
+.retrain-status.failed { background: #FDECEA; border-color: #F2C1BB; }
+.retrain-status p { margin: .2rem 0; }
+.retrain-log { max-height: 260px; overflow: auto; background: #0F2A3D; color: #DDE7EC; padding: .6rem .7rem;
+  border-radius: 6px; font-size: .78rem; white-space: pre-wrap; }
+
+/* ---- delete buttons (admin) ---- */
+.btn.danger { background: #FDECEA; color: #8C1D18; border-color: #F2C1BB; }
+.btn.danger:hover { background: #F9D7D3; }
+
+/* ---- optical check (A6) ---- */
+.optical-controls { margin: .5rem 0; }
+.optical-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .8rem; margin: .6rem 0; }
+.optical-card { border: 1px solid #dde3e7; border-radius: 8px; padding: .5rem; display: flex; flex-direction: column; gap: .3rem; }
+.optical-card p { margin: 0; }
+.optical-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; background: #EEF2F0; }
+.optical-noimg { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: .6rem; font-size: .8rem; color: #5f6f7a; background: #EEF2F0; border-radius: 6px; }

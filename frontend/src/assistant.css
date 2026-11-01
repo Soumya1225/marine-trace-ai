@@ -1,0 +1,9 @@
+.assistant .chat { max-height: 420px; overflow-y: auto; display: flex; flex-direction: column; gap: .5rem; padding: .25rem; }
+.bubble { max-width: 88%; padding: .55rem .75rem; border-radius: 12px; line-height: 1.4; font-size: .92rem; }
+.bubble.bot { background: #F1F5F8; align-self: flex-start; border-top-left-radius: 4px; }
+.bubble.me { background: #2C6E91; color: #fff; align-self: flex-end; border-top-right-radius: 4px; }
+.bubble .src { margin-top: .3rem; font-size: .75rem; color: #5F6F7A; }
+.ask-chips { display: flex; flex-wrap: wrap; gap: .35rem; margin: .7rem 0 .5rem; }
+.ask-chips .btn { white-space: normal; text-align: left; }
+.ask-row { display: flex; gap: .5rem; }
+.ask-row input { flex: 1; }

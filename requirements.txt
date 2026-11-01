@@ -1,0 +1,30 @@
+# ML + data (root project)
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+matplotlib
+Pillow
+requests
+python-dotenv
+shapely
+pyproj
+geopandas
+rasterio
+xarray
+netCDF4
+torch
+torchvision
+segmentation-models-pytorch
+pytest
+# backend
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-multipart
+PyJWT
+reportlab
+lightgbm
+timm

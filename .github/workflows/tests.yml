@@ -1,0 +1,27 @@
+# Runs the automated tests on every push and pull request (GitHub Actions, free for public repositories).
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install system libraries (GDAL for geospatial packages)
+        run: sudo apt-get update && sudo apt-get install -y gdal-bin libgdal-dev
+      - name: Install Python packages (CPU-only PyTorch)
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+          pip install -r requirements.txt -r backend/requirements.txt
+      - name: New feature tests (fast, no data needed)
+        run: python -m pytest tests/test_new_features.py -q
+      - name: Full test suite
+        run: python -m pytest tests -q
